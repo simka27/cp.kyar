@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/reservation.css">
+    <link rel="icon" href="../svg/logo.svg">
+
+    <title>SimkyWay</title>
+</head>
+
+<body>
+    <label class="burger-icon">&#9776;</label>
+    <nav class="burger-menu">
+        <ul>
+            <li><a href="main.html">Главная</a></li>
+            <li><a href="schedule.html">Расписание поездов</a></li>
+            <li><a href="#">Бронь билетов</a></li>
+            <li><a href="vacancies.html">Вакансиии</a></li>
+        </ul>
+    </nav>
+    <nav class="default">
+        <div class="logo">
+            <img src="../svg/logo.svg" alt="logo">
+        </div>
+        <div class="navigation">
+            <a href="../html/main.html">
+                <h2>Главная</h2>
+            </a>
+            <a href="../html/schedule.html">
+                <h2>Расписание поездов</h2>
+            </a>
+            <a>
+                <h2>Бронь билетов</h2>
+            </a>
+            <a href="../html/vacancies.html">
+                <h2>Вакансии</h2>
+            </a>
+        </div>
+    </nav>
+    <main>
+        <h1>Бронирование билетов</h1>
+        <p>Забронируйте билеты на поезд онлайн прямо сейчас!</p>
+        <form class="booking-form">
+            <label for="departure">Станция отправления:</label>
+            <input type="text" id="departure" name="departure" placeholder="Введите станцию отправления">
+
+            <label for="destination">Станция прибытия:</label>
+            <input type="text" id="destination" name="destination" placeholder="Введите станцию назначения">
+
+            <label for="time">Время отправления:</label>
+            <input type="time" id="time" name="time">
+
+            <label for="number">Количество билетов</label>
+            <select name="number" id="number">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+            </select>
+
+            <button type="submit">Забронировать</button>
+
+        </form>
+    </main>
+    <footer>
+        <p>&copy; SymkyWay <br>
+            г.Минск ул.Белорусская 21
+            <br>+375 (44) 553-62-27
+        </p>
+        <ul>
+            <li>Discord: simka#9939</li>
+            <li>Telegram: Siiiiiimka</li>
+            <li>Instagram: _simka_600</li>
+        </ul>
+    </footer>
+
+
+    <script src="../js/booking.js"></script>
+    <script src="../js/burger.js"></script>
+</body>
+
+</html>

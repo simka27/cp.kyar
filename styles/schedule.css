@@ -1,0 +1,211 @@
+@charset "UTF-8";
+@font-face {
+  font-family: BlueCurve;
+  src: url(../fonts/ofont.ru_Blue\ Curve.ttf);
+}
+* {
+  font-family: BlueCurve;
+}
+
+body {
+  background-color: #fe8535;
+  color: #ffffff;
+}
+body .burger-menu {
+  display: none;
+}
+body .burger-icon {
+  display: none;
+}
+body .default {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  flex: 1;
+}
+body .default .logo {
+  width: 100px;
+  height: 70px;
+}
+body .default .logo img {
+  width: 100px;
+  height: 70px;
+}
+body .default .navigation {
+  display: flex;
+  flex-flow: row nowrap;
+  width: 100%;
+  justify-content: space-around;
+  height: 100%;
+}
+body .default .navigation h2:last-child {
+  margin-right: 50px;
+}
+body .default .navigation a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: bold;
+  text-shadow: gray 5px 5px;
+}
+body .default .navigation a:hover:nth-child(2) {
+  color: #ffffff;
+  text-shadow: gray 5px 5px;
+}
+body .default .navigation a:hover {
+  color: #b20000;
+  text-shadow: none;
+}
+body main {
+  background-color: #fef4cd;
+  padding: 20px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body main h1 {
+  color: #b20000;
+  text-align: center;
+  margin-bottom: 20px;
+}
+body main form {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 100%;
+}
+body main form label {
+  display: block;
+  color: #b20000;
+  margin-bottom: 10px;
+}
+body main form input {
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+}
+body main form button {
+  width: 100%;
+  padding: 10px 20px;
+  background-color: #fd292f;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+body main form button:hover {
+  background-color: #d70208;
+}
+body main #schedule {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 60%;
+  margin-top: 20px; /* Добавим немного отступа сверху */
+}
+body main #schedule ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+body main #schedule ul li {
+  margin-bottom: 10px;
+  background-color: #fd292f; /* Добавим фоновый цвет для каждого элемента списка */
+  padding: 10px; /* Добавим внутренний отступ для элементов списка */
+  border-radius: 5px; /* Закруглим углы элементов списка */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Добавим небольшую тень для элементов списка */
+}
+body footer {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  height: 100%;
+}
+body footer ul {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: bold;
+  text-shadow: gray 4px 4px;
+}
+body footer ul li {
+  list-style: square;
+  text-align: start;
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: bold;
+  text-shadow: gray 4px 4px;
+}
+body footer p {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: bold;
+  text-shadow: gray 4px 4px;
+}
+
+@media (max-width: 768px) {
+  body .default {
+    display: none;
+  }
+  body .burger-icon {
+    display: block;
+    cursor: pointer;
+    font-size: 50px;
+  }
+  body .burger-menu.show {
+    display: block;
+  }
+  body .burger-menu.show ul {
+    display: flex;
+    flex-direction: row;
+    padding-left: 0%;
+    list-style-type: none;
+    justify-content: space-between;
+  }
+  body .burger-menu.show ul :first-child {
+    padding-right: 5%;
+  }
+  body .burger-menu.show ul li a {
+    text-decoration: none;
+  }
+  body main form {
+    max-width: 300px;
+  }
+  body main #schedule {
+    max-width: 500px;
+  }
+}
+@media (max-width: 440px) {
+  body main #schedule {
+    width: 90%;
+  }
+}
+@media (max-width: 380px) {
+  footer {
+    flex-direction: column;
+  }
+  footer p {
+    margin-bottom: 10px;
+  }
+  footer ul {
+    padding-left: 0;
+  }
+  footer ul li {
+    text-align: center;
+  }
+}
+@media (max-width: 320px) {
+  body main form {
+    width: 90%;
+  }
+}/*# sourceMappingURL=schedule.css.map */

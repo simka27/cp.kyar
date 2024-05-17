@@ -1,0 +1,279 @@
+@font-face {
+  font-family: BlueCurve;
+  src: url(../fonts/ofont.ru_Blue\ Curve.ttf);
+}
+* {
+  font-family: BlueCurve;
+}
+
+body {
+  background-color: #fe8535;
+  color: #ffffff;
+}
+body .burger-menu {
+  display: none;
+}
+body .burger-icon {
+  display: none;
+}
+body .default {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  flex: 1;
+}
+body .default .logo {
+  width: 100px;
+  height: 70px;
+}
+body .default .logo img {
+  width: 100px;
+  height: 70px;
+}
+body .default .navigation {
+  display: flex;
+  flex-flow: row nowrap;
+  width: 100%;
+  justify-content: space-around;
+  height: 100%;
+}
+body .default .navigation h2:last-child {
+  margin-right: 50px;
+}
+body .default .navigation a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: bold;
+  text-shadow: gray 5px 5px;
+}
+body .default .navigation a:hover:first-child {
+  color: #ffffff;
+  text-shadow: gray 5px 5px;
+}
+body .default .navigation a:hover {
+  color: #b20000;
+  text-shadow: none;
+}
+body main {
+  background-color: #fef4cd;
+  display: flex;
+  flex-flow: column nowrap;
+  width: 100%;
+  color: #b20000;
+}
+body main .about {
+  display: flex;
+  flex-flow: row wrap;
+  padding: 10px;
+  flex: 1;
+}
+body main .about h2 {
+  margin-left: 40%;
+}
+body main .about .company,
+body main .about .whywe {
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 5px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 10px;
+  color: #333333;
+}
+body main .about .company img,
+body main .about .whywe img {
+  width: 400px;
+  height: 300px;
+  margin-right: 20px;
+}
+body main .about .company p,
+body main .about .whywe p {
+  flex: 1;
+}
+body main h2 {
+  margin-left: 45%;
+  margin-top: 50px;
+}
+body main .news {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+  flex: 1;
+}
+body main .news div {
+  background-color: #ffffff;
+  margin: 10px 100px 100px 100px;
+  padding: 5px;
+  border-radius: 10px;
+  color: #333333;
+}
+body main .news div h3 {
+  color: #b20000;
+}
+body main .news img {
+  width: 400px;
+  height: 300px;
+}
+body main .choose {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+  border: 2px solid black;
+}
+body main .choose button {
+  padding: 10px;
+  width: 300px;
+  height: 50px;
+  margin: 5px;
+  font-size: large;
+  background-color: #fdb10b;
+  color: #b20000;
+  cursor: pointer;
+}
+body main .choose button:hover {
+  background-color: #b20000;
+  color: #fdb10b;
+}
+body footer {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  height: 100%;
+}
+body footer ul {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: bold;
+  text-shadow: gray 4px 4px;
+}
+body footer ul li {
+  list-style: square;
+  text-align: start;
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: bold;
+  text-shadow: gray 4px 4px;
+}
+body footer p {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: bold;
+  text-shadow: gray 4px 4px;
+}
+
+@media (max-width: 1040px) {
+  body main .news {
+    flex-flow: row wrap;
+  }
+}
+@media (max-width: 768px) {
+  body .burger-icon {
+    display: block;
+    cursor: pointer;
+    font-size: 50px;
+  }
+  body .burger-menu.show {
+    display: block;
+  }
+  body .burger-menu.show ul {
+    display: flex;
+    flex-direction: row;
+    padding-left: 0%;
+    list-style-type: none;
+    justify-content: space-between;
+  }
+  body .burger-menu.show ul :first-child {
+    padding-right: 5%;
+  }
+  body .burger-menu.show ul li a {
+    text-decoration: none;
+  }
+  body .default {
+    display: none;
+  }
+  body main .news {
+    flex-flow: row wrap;
+    width: 700px;
+  }
+  body .choose {
+    flex-flow: column wrap;
+    align-content: space-around;
+  }
+}
+@media (max-width: 440px) {
+  body main .about h2 {
+    margin-left: 15%;
+  }
+  body main .about .company, body main .about .whywe {
+    flex-direction: column;
+  }
+  body main .about .company img, body main .about .whywe img {
+    width: 300px;
+    height: 225px;
+  }
+  body main .news {
+    width: 400px;
+  }
+  body main .news img {
+    width: 300px;
+    height: 225px;
+  }
+  body main .news div {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 5%;
+  }
+}
+@media (max-width: 380px) {
+  body main .news {
+    width: 95%;
+  }
+  body main .news img {
+    width: 200px;
+    height: 150px;
+  }
+  body main .news div {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 5%;
+  }
+  body footer {
+    flex-direction: column;
+  }
+  body footer p {
+    margin-bottom: 10px;
+  }
+  body footer ul {
+    padding-left: 0;
+  }
+  body footer ul li {
+    text-align: center;
+  }
+}
+@media (max-width: 320px) {
+  body main .about .company {
+    width: 90%;
+  }
+  body main .about .company img {
+    width: 200px;
+    height: 150px;
+  }
+  body main .about .whywe {
+    width: 90%;
+  }
+  body main .about .whywe img {
+    width: 200px;
+    height: 150px;
+  }
+  body main .choose div button {
+    width: 250px;
+  }
+}/*# sourceMappingURL=main.css.map */

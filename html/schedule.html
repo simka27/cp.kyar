@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/schedule.css">
+    <link rel="icon" href="../svg/logo.svg">
+
+    <title>SimkyWay</title>
+</head>
+
+<body>
+    <label class="burger-icon">&#9776;</label>
+    <nav class="burger-menu">
+        <ul>
+            <li><a href="main.html">Главная</a></li>
+            <li><a href="#">Расписание поездов</a></li>
+            <li><a href="reservation.html">Бронь билетов</a></li>
+            <li><a href="vacancies.html">Вакансиии</a></li>
+        </ul>
+    </nav>
+    <nav class="default">
+        <div class="logo">
+            <img src="../svg/logo.svg" alt="logo">
+        </div>
+        <div class="navigation">
+            <a href="../html/main.html">
+                <h2>Главная</h2>
+            </a>
+            <a>
+                <h2>Расписание поездов</h2>
+            </a>
+            <a href="../html/reservation.html">
+                <h2>Бронь билетов</h2>
+            </a>
+            <a href="../html/vacancies.html">
+                <h2>Вакансии</h2>
+            </a>
+        </div>
+    </nav>
+    <main>
+        <h1>Расписание поездов</h1>
+        <form>
+            <label for="text">станция отправления:
+                <input id="text" type="text" placeholder="откуда">
+            </label>
+            <label for="text">станция прибытия:</label>
+            <input type="text" placeholder="куда">
+            <button type="submit">поиск</button>
+        </form>
+        <div id="schedule">
+
+        </div>
+
+
+    </main>
+    <footer>
+        <p>&copy; SymkyWay <br>
+            г.Минск ул.Белорусская 21
+            <br>+375 (44) 553-62-27
+        </p>
+        <ul>
+            <li>Discord: simka#9939</li>
+            <li>Telegram: Siiiiiimka</li>
+            <li>Instagram: _simka_600</li>
+        </ul>
+    </footer>
+    <script src="../js/XML_parser.js"></script>
+    <script src="../js/directschedule.js"></script>
+    <script src="../js/burger.js"></script>
+</body>
+
+
+
+</html>

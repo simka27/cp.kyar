@@ -1,0 +1,80 @@
+<schedule>
+    <train>
+        <departure_time>08:00</departure_time>
+        <departure_station>Минск</departure_station>
+        <arrival_station>Гродно</arrival_station>
+        <price>20 BYN</price>
+    </train>
+    <train>
+        <departure_time>10:30</departure_time>
+        <departure_station>Минск</departure_station>
+        <arrival_station>Брест</arrival_station>
+        <price>25 BYN</price>
+    </train>
+    <train>
+        <departure_time>12:45</departure_time>
+        <departure_station>Гомель</departure_station>
+        <arrival_station>Могилев</arrival_station>
+        <price>15 BYN</price>
+    </train>
+    <train>
+        <departure_time>05:24</departure_time>
+        <departure_station>Гомель</departure_station>
+        <arrival_station>Слоним</arrival_station>
+        <price>14 BYN</price>
+    </train>
+    <train>
+        <departure_time>13:23</departure_time>
+        <departure_station>Гомель</departure_station>
+        <arrival_station>Глуск</arrival_station>
+        <price>17 BYN</price>
+    </train>
+    <train>
+        <departure_time>02:45</departure_time>
+        <departure_station>Глуск</departure_station>
+        <arrival_station>Лида</arrival_station>
+        <price>19 BYN</price>
+    </train>
+    <train>
+        <departure_time>10:37</departure_time>
+        <departure_station>Речица</departure_station>
+        <arrival_station>Мозырь</arrival_station>
+        <price>5 BYN</price>
+    </train>
+    <train>
+        <departure_time>18:09</departure_time>
+        <departure_station>Брест</departure_station>
+        <arrival_station>Могилев</arrival_station>
+        <price>16 BYN</price>
+    </train>
+    <train>
+        <departure_time>04:05</departure_time>
+        <departure_station>Гродно</departure_station>
+        <arrival_station>Минск</arrival_station>
+        <price>15 BYN</price>
+    </train>
+    <train>
+        <departure_time>02:45</departure_time>
+        <departure_station>Гомель</departure_station>
+        <arrival_station>Лида</arrival_station>
+        <price>22 BYN</price>
+    </train>
+    <train>
+        <departure_time>12:05</departure_time>
+        <departure_station>Гомель</departure_station>
+        <arrival_station>Борисов</arrival_station>
+        <price>17 BYN</price>
+    </train>
+    <train>
+        <departure_time>06:57</departure_time>
+        <departure_station>Витебск</departure_station>
+        <arrival_station>Могилев</arrival_station>
+        <price>14 BYN</price>
+    </train>
+    <train>
+        <departure_time>16:28</departure_time>
+        <departure_station>Витебск</departure_station>
+        <arrival_station>Могилев</arrival_station>
+        <price>14 BYN</price>
+    </train>
+</schedule>
